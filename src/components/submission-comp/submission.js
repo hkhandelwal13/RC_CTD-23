@@ -82,7 +82,7 @@ const [Subdata,setSubdata] = useState([]);
         addAuthToken(getToken());
         AxiosInstance.get(endPoint)
                 .then((response) => {
-                    console.log("enter in then ");
+                    // console.log("enter in then ");
                     if (response.status) {
                         // console.log("enter in then if ");
                         // console.log(response.data);

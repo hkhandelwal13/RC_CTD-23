@@ -53,7 +53,7 @@ export default function Codingpage() {
     }
   };
   const { questionId } = useParams();
-  console.log("Debugging : ",questionId)
+  // console.log("Debugging : ",questionId)
   const endPoint = `/api/questions/${questionId}/`;
 
   const toggleModal = () => {
@@ -83,23 +83,23 @@ export default function Codingpage() {
     addAuthToken(getToken());
     AxiosInstance.get(endPoint)
             .then((response) => {
-                console.log("enter in then ");
+                // console.log("enter in then ");
                 if (response.status) {
-                    console.log("enter in then if ");
+                    // console.log("enter in then if ");
                     var data = response.data;
                    
-                    console.log(data);
+                    // console.log(data);
                    
                     
                     
                     setQuesData(data);
                     setsampleInput(data.sampleIp)
                     setTextFieldValue(data.sampleIp)
-                    console.log("dfsd",data.sampleIp)
+                    // console.log("dfsd",data.sampleIp)
                     setLanguage("cpp");
 
-                    console.log("data ",typeof(QuesData));
-                    console.log(QuesData);
+                    // console.log("data ",typeof(QuesData));
+                    // console.log(QuesData);
                     //  console.log(response.data.juniorLeaderboard);
 
                     
@@ -107,14 +107,14 @@ export default function Codingpage() {
                 }
                 else {
                     
-                    console.log("Error In fetch");
+                    // console.log("Error In fetch");
                 }
             })
             .catch((error) => {
               nav("/question");
-              console.log("enter in error ",error);
-              console.clear();
-                console.log("enter in error ",error);
+              // console.log("enter in error ",error);
+              
+                // console.log("enter in error ",error);
                 console.clear();
 
             })
@@ -137,24 +137,24 @@ export default function Codingpage() {
       'input': `${textFieldValue}`,
       'isSubmitted': `${val}`
     }
-    console.log(QuesData.sampleIp)
+    // console.log(QuesData.sampleIp)
 
     if(submissionpayload['input'] ===  '')
     {
         submissionpayload['input']=QuesData.sampleIp;
     }
 
-    console.log("submission payload ",submissionpayload)
+    // console.log("submission payload ",submissionpayload)
     
     // e.preventDefault();
     addAuthToken(getToken());
     AxiosInstance.post(subendPoint,submissionpayload)
             .then((response) => {
-                console.log("enter in then ");
+                // console.log("enter in then ");
                 if (response.status) {
-                    console.log("enter in then if ");
+                    // console.log("enter in then if ");
                    var  data = response.data;
-                    console.log("submission output ",data);
+                    // console.log("submission output ",data);
                     setExecutedData(data);
                     // console.log(typeof(data));
                     // console.log(typeof(jdata));
@@ -167,14 +167,14 @@ export default function Codingpage() {
                   }
                   else {
                     setIsButtonEnabled(false);
-                    console.log("Error In fetch");
+                    // console.log("Error In fetch");
                   }
                 })
                 .catch((error) => {
                   toast.update(id, { render: "Compilation Failed", type: "error", isLoading: false, autoClose:3000 })
                   setIsButtonEnabled(false);
               console.clear();
-                console.log("enter in error ",error);
+                // console.log("enter in error ",error);
 
             })
   
@@ -192,7 +192,7 @@ export default function Codingpage() {
 
   function handleThemeChange(th) {
     const theme = th;
-    console.log("theme...", theme);
+    // console.log("theme...", theme);
 
     if (["light", "vs-dark"].includes(theme.value)) {
       setTheme(theme);
@@ -207,7 +207,7 @@ export default function Codingpage() {
   },[]);
 
   const onSelectChange = (sl) => {
-    console.log("selected Option...", sl);
+    // console.log("selected Option...", sl);
     setLanguage(sl.name);
   
   };

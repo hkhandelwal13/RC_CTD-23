@@ -1,0 +1,2 @@
+[build]
+  command = "npm config set legacy-peer-deps true && npm install && CI=false npm run build"
