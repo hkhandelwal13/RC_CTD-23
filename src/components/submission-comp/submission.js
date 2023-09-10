@@ -39,24 +39,44 @@ const customStyles = {
   rows: {
       style: {
           minHeight: '72px', // override the row height
-           color: 'white'
+           color: 'aqua',
+           borderWidth: '7px',
+           background: 'white',
+           
         },
   },
   headCells: {
       style: {
           paddingLeft: '8px', // override the cell padding for head cells
           paddingRight: '8px',
-         background:'black'
+          background:'#45096d',
       },
   },
   cells: {
       style: {
           paddingLeft: '8px', // override the cell padding for data cells
           paddingRight: '8px',
+          color: 'white',
+          background: '#2d0c53',
       },
+  },
+  pagination: {
+    style: {
+      background:'#45096d',
+      borderColor:"white",
+      color:'white',
+      borderWidth:'2px',
+    },
   },
 };
 // var data={};
+// const customStyles2 = {
+//   pagination: {
+//     style: {
+//       background:'red',
+//     },
+//   },
+// };
 
 
 const paginationComponentOptions = {
@@ -175,7 +195,7 @@ const [Subdata,setSubdata] = useState([]);
             item.id.toString().includes(searchText.toLowerCase())
           )}
           pagination
-          // customStyles={customStyles}
+          customStyles={customStyles}
           paginationPerPage={5} 
           paginationComponentOptions={paginationComponentOptions}
           className="submissiontable"

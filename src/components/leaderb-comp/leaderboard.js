@@ -12,6 +12,50 @@ const endPoint = "/api/leaderboard/";
 var data={};
 
 // var data1={};
+const customStyles = {
+  rows: {
+      style: {
+          // minHeight: '72px', // override the row height
+           color: 'aqua',
+           borderWidth: '7px',
+           background: 'white',
+           
+        },
+  },
+  headCells: {
+      style: {
+        background :'#45096d',
+      },
+  },
+  cells: {
+      style: {
+          // paddingLeft: '8px', // override the cell padding for data cells
+          // paddingRight: '8px',
+          color: 'white',
+          background: '#2d0c53',
+      },
+  },
+  pagination: {
+    style: {
+      background:'#45096d',
+      borderColor:"white",
+      color:'white',
+      borderWidth:'2px',
+    },
+  },
+};
+// var data={};
+const customStyles2 = {
+  buttons: {
+      style: {
+          minHeight: '72px', // override the row height
+           color: 'aqua',
+           borderWidth: '4px',
+           background: 'white',
+           
+        },
+  },
+};
 
 
 const paginationComponentOptions = {
@@ -129,6 +173,7 @@ const Leaderboard = () => {
             )}
             pagination
             paginationPerPage={8} 
+            customStyles={customStyles}
             paginationComponentOptions={paginationComponentOptions}
             highlightOnHover
             responsive
