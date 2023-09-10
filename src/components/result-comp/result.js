@@ -85,7 +85,7 @@ const Result = () => {
                     <th>
                       Rank
                     </th>
-                    <th>
+                    <th id="TSub">
                       Score
                     </th>
                   </thead>
@@ -100,18 +100,19 @@ const Result = () => {
                     </tr>
                   </tbody>
                 </table>
-                <table className="tbles">
+                <table className="tbles" id='tb2'>
                   <thead>
-                    <th>
-                      Total Submissions
+                    <th >
+                      Total <br/>
+                      Submissions
                     </th>
-                    <th>
+                    <th id="TSub" >
                       Accuracy
                     </th>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>
+                      <td >
                         {total}
                       </td>
                       <td>
@@ -140,8 +141,9 @@ const Result = () => {
                     </div>
                     <div className="content">
                       
-                      <p>2nd</p>
-                      <p>{top6?.[1]?.user1}</p>
+                      {/* <p>2nd</p> */}
+                      <p id="m1"></p>
+                      <p> 🥈 {top6?.[1]?.user1}</p>
                       <p>Score: {top6?.[1]?.score}</p> 
                     </div>
                   </div>
@@ -152,8 +154,10 @@ const Result = () => {
                         <h2 className="place">1</h2>
                     </div>
                     <div className="content">
-                       <p>1st</p>
-                       <p>{top6?.[0]?.user1}</p>
+                       {/* <p>1st</p> */}
+                       
+                       <p></p>
+                       <p>🥇 {top6?.[0]?.user1}</p>
                        <p>Score: {top6?.[0]?.score}</p>
                     </div>
                   </div>
@@ -163,17 +167,19 @@ const Result = () => {
                         <h2 className="place">3</h2>
                     </div>
                     <div className="content">
-                      <p>3rd</p>
-                      <p>{top6?.[2]?.user1}</p>
+                      {/* <p>3rd</p> */}
+                      <p></p>
+                      <p>🥉{top6?.[2]?.user1}</p>
+                      
                       <p>Score: {top6?.[2]?.score}</p>
                     </div>
                   </div>
              </div>
              <div className="top6">
                 <div className="tble">
-                    <table className="leader-table table-md table-hover" id="myTable" bgcolor = "#2E363B">
-                      <thead>
-                        <tr className="headers" bgcolor="#13303E">
+                    <table className="leader-table table-md table-hover" id="myTable">
+                      <thead className='headers1'>
+                        <tr className="headers" >
                           <th scope="col" className="userb p-2">Rank</th>
                           <th scope="col" className="userb p-2">Name</th>
                           <th scope="col" className="userb p-2">Score</th>

@@ -145,7 +145,8 @@ export default function Consolecontent({isSubmit, data,codeInput,changedData, on
             )}
             variant="filled"
             focused
-            inputProps={{ style: { color: "white" } }}
+            inputProps={{ readOnly: true, style: { color: "white" } }}
+            
           />
       </div> 
 

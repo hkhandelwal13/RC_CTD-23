@@ -87,10 +87,10 @@ export default function Navbar() {
       <div>
         <a
             className="navbar-brand navvi pisblogo"
-            href="https://ctd.credenz.in"
+            // href="https://ctd.credenz.in"
           
             style={{padding: 0, marginLeft : 20}}
-            ><img src="https://i.postimg.cc/HsPn6YrQ/NCC-2.png" alt="PISBLogo" className='img-style'  /></a>
+            ><img src="https://i.postimg.cc/HsPn6YrQ/NCC-2.png" alt="PISBLogo" className='img-style'/></a>
     </div>
    
     

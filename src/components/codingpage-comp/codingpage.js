@@ -38,6 +38,8 @@ export default function Codingpage() {
   const [language, setLanguage] = useState(languageOptions[0]);
   const [textFieldValue, setTextFieldValue] = useState('');   //to take input from user
   const [highlightedButton, setHighlightedButton] = useState(null);
+
+  const [selectedLanguage, setSelectedLanguage] = useState('cpp');
   // const CodeSyntax = {
   //   "cpp":"#include <bits/stdc++.h>\nusing namespace std;\nint main() {\n// your code goes here\nreturn 0;\n}",
   //   "c":"",
@@ -72,6 +74,8 @@ export default function Codingpage() {
 
 
   useEffect(()=>{
+    setSelectedLanguage("cpp")
+    setConsoleMenuOpen(false);
     const jsonObject = JSON.parse(localStorage.getItem('qdata'));
     setQuestiontoggle(jsonObject)
     // console.log("hello",jsonObject);
@@ -206,6 +210,16 @@ export default function Codingpage() {
     );
   },[]);
 
+  // on toggle question code get set to payload
+  useEffect(() => {
+    setCode(code);
+    // setLanguage("cpp");
+  },[code]);
+  // useEffect(() => {
+    // setLanguage("cpp");
+  // },[language,]);
+  
+
   const onSelectChange = (sl) => {
     // console.log("selected Option...", sl);
     setLanguage(sl.name);
@@ -269,7 +283,7 @@ export default function Codingpage() {
     {/* <div className="h-4 w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500"></div> */}
       <div className="selector">
         <div className="px-4 py-2">
-          <LanguagesDropdown onSelectChange={onSelectChange} />
+          <LanguagesDropdown onSelectChange={onSelectChange} selectedLanguag = {selectedLanguage}/>
         </div>
         <div className="px-4 py-2">
           <ThemeDropdown handleThemeChange={handleThemeChange} theme={theme} />

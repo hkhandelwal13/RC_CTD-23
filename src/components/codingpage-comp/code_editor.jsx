@@ -43,8 +43,9 @@ const CodeEditorWindow = ({ onChange, language, code, theme ,questionId }) => {
       
       setValue(CodeSyntax[language]);  
     }
+    onChange("code", storedCode);  
 
-  }, [language]); // Run this effect only once on component mount
+  }, [language,questionId]); // Run this effect only once on component mount
 
   const handleEditorChange = (value) => {
     setValue(value);    

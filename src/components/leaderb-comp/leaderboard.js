@@ -172,7 +172,7 @@ const Leaderboard = () => {
                item.user1.toLowerCase().includes(searchQuery.toLowerCase())
             )}
             pagination
-            paginationPerPage={8} 
+            paginationPerPage={6} 
             customStyles={customStyles}
             paginationComponentOptions={paginationComponentOptions}
             highlightOnHover
