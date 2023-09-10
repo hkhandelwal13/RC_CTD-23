@@ -35,7 +35,9 @@
   .custom-table {
     margin-top: 7px;  
   }
-  
+  .Hello > th{
+    background-color: black!important;
+  }
   /* Style for table header */
   
   

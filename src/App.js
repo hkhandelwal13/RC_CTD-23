@@ -70,7 +70,7 @@ function App() {
           <Route path="/login" element={loggedIn  ? IsAccepted ? <Navigate to="/question" /> : <Navigate to="/instruction" /> : <Login />} />
           <Route path="/instruction" element={loggedIn && !accessExpired && !IsAccepted ?  <Instruct />  : loggedIn && IsAccepted ? <Navigate to="/question" /> : <Navigate to="/" />} />
           <Route path="/result" element={ loggedIn && !accessExpired ? <Quescards /> : loggedIn ? <Result /> : <Navigate to="/" />} />
-          {/* <Route path="/result" element={ <Result />} /> */}
+          <Route path="/result" element={ <Result />} />
           <Route path="/question" element={loggedIn && !accessExpired ? <Quescards /> : <Navigate to="/" />} />
           <Route path="/leaderboard" element={loggedIn && !accessExpired ? <Leaderboard /> : <Navigate to="/" />} />
           {/* <Route path="/submission" element={<Submission/>} /> */}
