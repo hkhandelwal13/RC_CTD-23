@@ -25,8 +25,8 @@ export default function Consolecontent({isSubmit, data,codeInput,changedData, on
     // console.log("code  ",code)
     // console.log("data  ",typeof(data))
     // console.log("data  ",data)
-    console.log("change dat a ",changedData)
-    console.log("is Submit",isSubmit)
+    // console.log("change dat a ",changedData)
+    // console.log("is Submit",isSubmit)
   },[data,isSubmit])
 
   useEffect(() => {
@@ -61,7 +61,7 @@ export default function Consolecontent({isSubmit, data,codeInput,changedData, on
     }else{
       
       setVerdict("Failed");
-      console.log("All  are faile");
+      // console.log("All  are faile");
     }
     // if (allAC) {
     //   // Show a notification using react-toastify

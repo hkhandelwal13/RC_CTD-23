@@ -7,6 +7,7 @@ import { useState,useEffect } from 'react';
 import './submission.css'
 import { AxiosInstance ,addAuthToken} from '../../Utils/AxiosConfig';
 import { getToken} from '../../Utils/utils';
+import color from 'material-ui-core/colors/amber';
 
 
 
@@ -22,12 +23,51 @@ import { getToken} from '../../Utils/utils';
 // }
 
 const statusColors = {
+  "AC": "white", // Define the color for "AC" status
+  "WA": "white",   // Define the color for other status, e.g., "WA"
+  "CE": "black",
+};
+
+
+const statusColorsnew = {
   "AC": "green", // Define the color for "AC" status
   "WA": "red",   // Define the color for other status, e.g., "WA"
   "CE": "yellow",
 };
+
+const customStyles = {
+  rows: {
+      style: {
+          minHeight: '72px', // override the row height
+           color: 'white'
+        },
+  },
+  headCells: {
+      style: {
+          paddingLeft: '8px', // override the cell padding for head cells
+          paddingRight: '8px',
+         background:'black'
+      },
+  },
+  cells: {
+      style: {
+          paddingLeft: '8px', // override the cell padding for data cells
+          paddingRight: '8px',
+      },
+  },
+};
 // var data={};
+
+
+const paginationComponentOptions = {
+  noRowsPerPage:true
+};
+
+
 export default function Submission(props) {
+
+
+
 
 
   const [searchText] = useState('');
@@ -35,7 +75,7 @@ export default function Submission(props) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [copied, setCopied] = useState(false);   //for copy code
   const endPoint = `/api/submissions/?question=${props.questionId}`;
-
+  
   const columns = [
     // {name:"ID",selector:"id",sortable: true },
     // { name: "Team", selector: "team", sortable: true },
@@ -54,6 +94,8 @@ export default function Submission(props) {
       <span
         style={{
           color: statusColors[row.status], // Set the color based on the status value
+          backgroundColor:statusColorsnew[row.status]
+
         }}
       >
         {row.status}
@@ -133,7 +175,11 @@ const [Subdata,setSubdata] = useState([]);
             item.id.toString().includes(searchText.toLowerCase())
           )}
           pagination
+          // customStyles={customStyles}
+          paginationPerPage={5} 
+          paginationComponentOptions={paginationComponentOptions}
           className="submissiontable"
+  
         />
         <Modal className="modalpanti" isOpen={isModalOpen} onRequestClose={closeModal}>
           <div className='modalinside'>

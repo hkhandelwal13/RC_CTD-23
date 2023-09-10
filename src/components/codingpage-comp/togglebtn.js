@@ -5,7 +5,7 @@ import HtmlReactParser from 'html-react-parser'
 const QuestionHubPage = (props) => {
   const [viewType, setViewType] = useState('question'); // Default to showing questions
   const qdata = localStorage.getItem('qdata');
-  console.log(qdata);
+  // console.log(qdata);
   return (
 
     <div>
@@ -33,7 +33,7 @@ const QuestionDetailSection = (props) => {
 
           
         </div>
-        <div className="quepart que-description" Style="height: auto;">
+        <div className="quepart que-description" style={{ height: "auto" }}>
           {/* <h4>Description</h4> */}
           {HtmlReactParser(String(props.QuesData.description))}
           

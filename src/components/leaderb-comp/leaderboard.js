@@ -10,13 +10,21 @@ import LoaderComponent from "../loader/loader";
 
 const endPoint = "/api/leaderboard/";
 var data={};
+
 // var data1={};
+
+
+const paginationComponentOptions = {
+  noRowsPerPage:true
+};
+
 const Leaderboard = () => {
   const [loading, setLoading] = useState(false);
 
   const [dataSet, setDataSet] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   useEffect(()=>{
+    console.clear();
     setLoading(true);
     addAuthToken(getToken());
     AxiosInstance.get(endPoint)
@@ -100,7 +108,7 @@ const Leaderboard = () => {
   return (
     <>
     <body>
-      <div> {loading && <LoaderComponent show={true} />}</div>
+      {/* <div> {loading && <LoaderComponent show={true} />}</div> */}
       <div className="row rawdat">
         <h1 className="mt-3 mb-2 text-center">Leaderboard</h1>
         <div className="searchFunc">
@@ -120,6 +128,8 @@ const Leaderboard = () => {
                item.user1.toLowerCase().includes(searchQuery.toLowerCase())
             )}
             pagination
+            paginationPerPage={8} 
+            paginationComponentOptions={paginationComponentOptions}
             highlightOnHover
             responsive
             className="leaderboardtable"
