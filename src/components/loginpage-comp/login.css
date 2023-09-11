@@ -6,7 +6,8 @@ html {
     padding: 0;
     /*font-family: sans-serif;*/ 
     /* background-image: linear-gradient(227deg, rgba(6,4,32,1) 15%, rgba(20,8,89,1) 28%, rgba(127,58,180,1) 48%, rgba(9,8,74,1) 81%, rgba(5,5,36,1) 91%); */
-    background-image: linear-gradient(222deg, rgb(23, 4, 32) 15%, rgb(53, 8, 89) 28%, rgb(128, 67, 174) 48%, rgb(48, 7, 94) 81%, rgb(26, 5, 36) 91%);
+    /* background-image: linear-gradient(222deg, rgb(23, 4, 32) 15%, rgb(53, 8, 89) 28%, rgb(128, 67, 174) 48%, rgb(48, 7, 94) 81%, rgb(26, 5, 36) 91%); */
+    background-image: linear-gradient(315deg, #10223b 100%, #3a3434 10%);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

@@ -1,10 +1,10 @@
 import axios from "axios"; 
 
-export const API_URL = "https://api.ncc.ctd.credenz.in/"; 
+export const API_URL = "https://api.rc.ctd.credenz.in/"; 
 
 
 export const AxiosInstance = axios.create({
-    baseURL : "https://api.ncc.ctd.credenz.in/",
+    baseURL : "https://api.rc.ctd.credenz.in/",
    // withCredentials : true,
     Headers:{
         'content-type':'application/json',

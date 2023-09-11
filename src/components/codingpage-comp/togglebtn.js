@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import TextField from '@mui/material/TextField';
 import Submission from "../submission-comp/submission"
 import "./tinymce.css"
 import HtmlReactParser from 'html-react-parser'
@@ -77,6 +78,18 @@ const QuestionDetailSection = (props) => {
           <button>GET OUTPUT</button>
         </div> 
       </div> */}
+
+
+<div className="grid-container">
+        <div className="grid-item">
+            <h3>Input</h3>
+         
+        </div>
+        <div className="grid-item">
+            <h3>Output</h3>
+            {/* <!-- Add your output content here --> */}
+        </div>
+    </div>
       
     </div>
   );

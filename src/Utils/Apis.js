@@ -2,7 +2,7 @@ import axios from "axios";
   
 
 export const APIURL  = () => { 
-    return "http://20.198.81.8";
+    return "http://20.193.136.155/";
 } 
 
 

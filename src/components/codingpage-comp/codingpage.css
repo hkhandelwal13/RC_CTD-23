@@ -156,6 +156,34 @@ margin-left:15px;
 user-select: none;
 
 }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; /* Adjust the gap as needed */
+}
+
+.grid-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  aspect-ratio: 1 / 0.8;
+}
+
+.grid-item h3 {
+  position: relative;
+}
+
+.grid-item h3::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #beb8b8; /* Adjust the line color and style as needed */
+  width: 55%; /* Adjust the line width as needed */
+  position: absolute;
+  bottom: -5px; /* Adjust the position of the line as needed */
+  left: 25%; /* Center the line under the heading */
+}
 /* .question-sec:hover{
   /* background: rgba(255, 255, 255, 0.2);
   filter:drop-shadow(); */
