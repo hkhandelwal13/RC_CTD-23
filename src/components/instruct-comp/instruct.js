@@ -8,8 +8,17 @@ function Instruct() {
   const [termsChecked, setTermsChecked] = useState(false);
   const [isButtonEnabled, setIsButtonEnabled] = useState(false);
   const instructions = [ 
-    "This round comprises of 6 questions. All the questions have marking scheme +100 for correct answers.",
-    "Please play the game in Full Screen (Fn + F11) for better resolution."
+    "Participants are allowed only one login session. Multiple logins are not permitted ",
+    "The contest will run from 6 PM to 7:30 PM, lasting for a duration of 1.5 hours.",
+    "The contest comprises of 5 questions",
+    "All questions are available in the Question Hub. Additionally, the correct submission percentage of all the participants for each question is displayed",
+    "A question toggling section allows you to navigate between different questions ",
+    
+    "Options for language change and theme selection are provided above the code editor ",
+    "Your answer will be represented as:'AC' (Accepted) if all test cases pass. 'WA'(Wrong Answer) if any test case fails. 'CE' (Compilation Error) if there's a compilation error",
+    "If you encounter a Compilation Error, you can resubmit your code by replacing the previous code in the editor.",
+    "There is a 5% penalty on wrong submissions ",
+    "Please play the game in Full Screen (Fn + F11) for better resolution.",
   ];
 
   const handleTermsChange = () => {

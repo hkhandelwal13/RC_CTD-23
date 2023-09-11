@@ -70,20 +70,20 @@ const Leaderboard = () => {
   useEffect(()=>{
     console.clear();
     setLoading(true);
-    addAuthToken(getToken());
+    // addAuthToken(getToken());
     AxiosInstance.get(endPoint)
             .then((response) => {
                 // console.log("enter in then ");
                 if (response.status) {
                     // console.log("enter in then if ");
                     data = response.data;
-                    if (localStorage.getItem("isJunior")){
+                    // if (localStorage.getItem("isJunior")){
                       // console.log("junior")
                       var jdata = data.juniorLeaderboard;
-                    }else{
-                      // console.log("senior")
-                       jdata = data.seniorLeaderboard;
-                    }
+                    // }else{
+                    //   // console.log("senior")
+                    //    jdata = data.seniorLeaderboard;
+                    // }
                     // console.log(data);
                     // console.log(jdata);
                     

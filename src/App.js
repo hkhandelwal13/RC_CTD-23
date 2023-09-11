@@ -72,7 +72,7 @@ function App() {
           <Route path="/result" element={ loggedIn &&  !accessExpired ?<Result /> : <Navigate to="/login" />} />
           {/* <Route path="/result" element={ <Result />} /> */}
           <Route path="/question" element={loggedIn && !accessExpired ? <Quescards /> : <Navigate to="/" />} />
-          <Route path="/leaderboard" element={loggedIn ? <Leaderboard /> : <Navigate to="/" />} />
+          <Route path="/leaderboard" element={<Leaderboard /> } />
           {/* <Route path="/submission" element={<Submission/>} /> */}
           <Route path="/question/:questionId" element={<Codingpage/>} />
           {/* <Route path="/test" element={<QuestionHubPage/>} /> */}

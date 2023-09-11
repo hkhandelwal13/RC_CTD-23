@@ -74,6 +74,7 @@ export default function Codingpage() {
 
 
   useEffect(()=>{
+    
     setSelectedLanguage("cpp")
     setConsoleMenuOpen(false);
     const jsonObject = JSON.parse(localStorage.getItem('qdata'));
@@ -175,9 +176,9 @@ export default function Codingpage() {
                   }
                 })
                 .catch((error) => {
-                  toast.update(id, { render: "Compilation Failed", type: "error", isLoading: false, autoClose:3000 })
+                  console.clear();
+                  toast.update(id, { render: error.response.data.msg , type: "error", isLoading: false, autoClose:3000 })
                   setIsButtonEnabled(false);
-              console.clear();
                 // console.log("enter in error ",error);
 
             })
@@ -260,7 +261,7 @@ export default function Codingpage() {
      <Link  key={key} to={`/question/${value}`}>
     <button
       type="button"
-      className={`questogglebtn ${highlightedButton === key ? 'highlighted' : ''}`}
+      className={`questogglebtn ${value === questionId ? 'highlighted' : ''}`}
       onClick={() => handleButtonClick(key)}
     >
         {key} 
