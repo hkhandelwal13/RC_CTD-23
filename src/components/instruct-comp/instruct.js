@@ -10,7 +10,7 @@ function Instruct() {
   const instructions = [ 
     "Participants are allowed only one login session. Multiple logins are not permitted ",
     "The contest will run from 6 PM to 7:30 PM, lasting for a duration of 1.5 hours.",
-    "The contest comprises of 5 questions",
+    "The contest comprises of 6 questions",
     "All questions are available in the Question Hub. Additionally, the correct submission percentage of all the participants for each question is displayed",
     "A question toggling section allows you to navigate between different questions ",
     
