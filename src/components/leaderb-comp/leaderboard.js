@@ -140,14 +140,19 @@ const Leaderboard = () => {
     { name: "Q5", selector: "questionSolvedByUser.Q5", sortable: true },
     // { name: "Q6", selector: "questionSolvedByUser.Q6", sortable: true },
 
-    { name: "Time", selector: "lastUpdate", sortable: true ,format: row => {
+    { name: "Time", selector: "lastUpdate", sortable: true ,format: (row) => {
       const dateTime = new Date(row.lastUpdate);
+      const timezoneOffset = 5.5 * 60; // +05:30 in minutes
+      dateTime.setMinutes(dateTime.getMinutes() + timezoneOffset);
       const hours = dateTime.getUTCHours();
       const minutes = dateTime.getUTCMinutes();
-      const seconds = dateTime.getUTCSeconds();  
+      const seconds = dateTime.getUTCSeconds();
       const timeString = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
       return timeString;
     },},
+
+
+
     { name: "Score", selector: "score", sortable: true },
   ];
 
