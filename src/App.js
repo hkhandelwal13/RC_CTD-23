@@ -4,7 +4,7 @@ import {BrowserRouter,Route, Routes ,Navigate} from "react-router-dom";
 import Navbar from "./components/Nav-comp/Navbar";
 import './App.css';
 import Instruct from "./components/instruct-comp/instruct";
-
+import Mobileview from './components/codingpage-comp/mobileview/mobileview';
 import Codingpage from "./components/codingpage-comp/codingpage";
 // import Submission from "./components/submission-comp/submission";
 import Leaderboard from "./components/leaderb-comp/leaderboard";
@@ -18,14 +18,28 @@ import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import {isTimeOver} from './Utils/utils';
 
+function displayOnlyOnDesktop() {
+  const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+
+  if(isMobile){
+    return <div>Sorry, this website is only available on desktop devices.</div>
+}
+}
+
+
 function App() {
 
   const [loggedIn, setLoggedIn] = useState(false);
   const [accessExpired, setAccessExpired] = useState(false);
   const [IsAccepted, setIsAccepted] = useState(false);
-
+  const [showMobileWarning, setShowMobileWarning] = useState(false);
   // Check local storage for login status on initial load
+
+
+  
   useEffect(() => {
+    if(window.innerWidth <= 800)
+      setShowMobileWarning(true)
     const userIsLoggedIn = localStorage.getItem('isLogin') === 'true';
     const contractAccept = localStorage.getItem('contractAccept') === 'true';
     // console.log("cecking ",userIsLoggedIn);
@@ -43,14 +57,18 @@ function App() {
   //   setLoggedIn(false);
   // };
 
-
   return (
+   
+    <>
+  
+  {showMobileWarning ? <Mobileview/>: 
     <BrowserRouter>
+  
     <div>
       <div>
         <Navbar />
       </div>
-
+      
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -84,7 +102,10 @@ function App() {
       </div>
     </div>
     </BrowserRouter>
+    }
+    </>
   );
+ 
 }
 
 export default App;

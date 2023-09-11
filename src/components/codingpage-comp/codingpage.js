@@ -128,7 +128,7 @@ export default function Codingpage() {
   
   const handleSubmit = async (val) => {
     setExecutedData([]);
-    const id = toast.loading("Compilation started");
+    const id = toast.loading("Build Process Started");
     setisSubmit(val);
     setConsoleMenuOpen(!ConsoleMenuOpen);
     {ConsoleMenuOpen ?  setConsoleMenuOpen(ConsoleMenuOpen) : setConsoleMenuOpen(!ConsoleMenuOpen)}
@@ -168,7 +168,7 @@ export default function Codingpage() {
                     setIsButtonEnabled(false);
                     // setModalValue(data.return);
                     
-                    toast.update(id, { render: "Compilation Done", type: "success", isLoading: false, autoClose:3000 })
+                    toast.update(id, { render: "Build Process Finished", type: "success", isLoading: false, autoClose:3000 })
                   }
                   else {
                     setIsButtonEnabled(false);

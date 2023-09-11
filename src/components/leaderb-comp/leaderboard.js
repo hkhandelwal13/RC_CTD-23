@@ -138,7 +138,7 @@ const Leaderboard = () => {
     { name: "Q3", selector: "questionSolvedByUser.Q3", sortable: true },
     { name: "Q4", selector: "questionSolvedByUser.Q4", sortable: true },
     { name: "Q5", selector: "questionSolvedByUser.Q5", sortable: true },
-    { name: "Q6", selector: "questionSolvedByUser.Q6", sortable: true },
+    // { name: "Q6", selector: "questionSolvedByUser.Q6", sortable: true },
 
     { name: "Time", selector: "lastUpdate", sortable: true ,format: row => {
       const dateTime = new Date(row.lastUpdate);
