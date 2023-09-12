@@ -3,7 +3,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   background: linear-gradient(45deg,#141e30,#355780);
 
 }

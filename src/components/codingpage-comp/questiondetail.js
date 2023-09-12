@@ -89,7 +89,7 @@ export default function QuestionDetailSection(props){
       })
       .catch((error) => {
         setIsButtonDisabled(false);
-        toast.update(id, { render: error.response.data.msg, type: "error", isLoading: false, autoClose:3000 })
+        toast.update(id, { render: "Build Process Failed", type: "error", isLoading: false, autoClose:3000 })
         console.clear();
         //   console.log("enter in error +",error.response);
       
@@ -157,14 +157,14 @@ export default function QuestionDetailSection(props){
         </div> */}
   
   <div>
-
-  <div style={{ margin: '10px 0px' }}>
+  <div style={{ margin: '14x auto', display:'flex',justifyContent:'center', marginBottom:'17px'}}>
           {/* <Button variant="contained" color="primary" onClick={TakeIpOp} disabled={inputText.trim()  === '' ? 'disabled' : ''} > */}
-          <Button variant="contained" type="button" color="primary" onClick={TakeIpOp}     disabled={inputText.trim() === ''? true : !false ? isButtonDisabled : true } style={{border:'2px solid #157a93'}}   >
+          <Button variant="contained" type="button" color="info" onClick={TakeIpOp}     disabled={inputText.trim() === ''? true : !false ? isButtonDisabled : true } style={{border:'2px solid #157a93',color:'#F5F5F5'}}   >
             Process Input
           </Button>
 
         </div>
+ 
         <Grid container spacing={2}>
           <Grid item xs={6}>
             <div>
@@ -180,7 +180,7 @@ export default function QuestionDetailSection(props){
                   borderRadius:'5px',
                 }}
                 multiline
-                rows={4}
+                rows={3}
                 placeholder="Enter input here"
                 InputProps={{
                   style: { ...whiteText },
@@ -207,7 +207,7 @@ export default function QuestionDetailSection(props){
                   border: '2px solid white',
                   borderRadius: '5px',
                 }}
-                rows={4}
+                rows={3}
                 placeholder="Display output here"
                 InputLabelProps={{ className: 'whiteText' }} // White label color
                 className={whiteOutlinedInput} // Apply white outline
@@ -222,6 +222,9 @@ export default function QuestionDetailSection(props){
             </div>
           </Grid>
         </Grid>
+
+
+    
       
       </div>
   

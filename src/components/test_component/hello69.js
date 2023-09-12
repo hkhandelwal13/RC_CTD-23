@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react';  
 
 const QuestionHubPage = () => {
-  const [viewType, setViewType] = useState('question'); // Default to showing questions
+  const [viewType, setViewType] = useState('question'); // Default to showing  quetions  
 
   return (
     <div>
       <div>
-        <button onClick={() => setViewType('question')}>Question</button>
-        <button onClick={() => setViewType('submissions')}>Submissions</button>
+        <button onClick={() => setViewType('question')}>Question</button> 
+        <button onClick={() => setViewType('submissions')}>Submissions</button>  
       </div>
       {viewType === 'question' ? <QuestionDetailSection /> : <SubmissionsSection />}
     </div>

@@ -8,16 +8,16 @@ import { BsCheck2Circle } from 'react-icons/bs';
 // import LoaderComponent from "../loader/loader"; 
 // import Graph from "../Graph/graph"
 
-const endPoint = "/api/questions/"
+const endPoint = "/api/questions/" 
 
-const tasks = [
+const tasks = [ 
   
 ];
 
 function App() {
   // const nav = useNavigate();
   // const [loading, setLoading] = useState(false);
-const [Qdata, setQdata] = useState(tasks);
+const [Qdata, setQdata] = useState(tasks);  
   useEffect(()=>{
    
     // setLoading(true);
@@ -72,7 +72,7 @@ const [Qdata, setQdata] = useState(tasks);
       <div className="thwala" id="progress">
         <div className="progress" style={{ height: '25px' }}>
           <div
-            className="progress-bar progress-bar-striped progress-bar-animated"
+            className="progress-bar progress-bar-striped   progress-bar-animated"
             role="progressbar"
             style={{ width: `${task.accuracy}%` }}
             aria-valuenow={task.accuracy}
@@ -86,7 +86,7 @@ const [Qdata, setQdata] = useState(tasks);
       <div className="thwala">
     <button
       type="button"
-      className={`btn btn-primary btn-sm `}
+      className={`btn btn-primary btn-sm solvebtn`}
       data-bs-toggle="modal"
       data-bs-target="#myModal"
     >

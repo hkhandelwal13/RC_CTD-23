@@ -119,7 +119,7 @@ background-color: none;
   }
 
   .rdt_TableHead{
-    background-color: aqua;  
+    background-color: #021842;  
   }
   .hRfGpm{
     color: white;
@@ -144,7 +144,7 @@ background-color: none;
     padding: 0.5px;
   }
   .hwVeUK > svg:hover{
-    border-color: white;
+    border-color: lightblue;
   }
   .hwVeUK:disabled{
     color: #000000;

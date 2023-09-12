@@ -201,7 +201,7 @@ const [loginState, setLoginState] = useState();
             </div> */}
 
             <div className="input-group mb-2">
-              <button className="btn btn-lg w-100 rounded-2 fs-6 btn12 ">
+              <button className="btn btn-lg w-100 rounded-2 fs-6 btn12">
                 Register
               </button>
             </div>

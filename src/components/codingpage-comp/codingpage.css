@@ -295,11 +295,11 @@ user-select: none;
   transition: all 0.4s;
 }
 .console-btn,.run-btn {
-  border: 3px solid rgba(154, 86, 206, 0.911);
+  border: 3px solid rgba(25, 81, 126, 0.911);
   color: rgb(255, 255, 255);
 }
 .console-btn:hover,.run-btn:hover {
-  background-color: blueviolet;
+  background-color: rgb(8, 36, 73);
   color: #fff;
 }
 .console-btn::after,.run-btn::after {
@@ -727,7 +727,7 @@ ion-icon {
  display: inline-block;
   /* padding: 0.5em 1.7em; */
   margin: 0 0.1em 0.1em 0;
-  border: 0.2rem solid rgb(32 32 116 / 91%);;
+  border: 0.2rem solid rgba(50, 80, 181, 0.91);;
   
   border-radius: 0.65em;
   box-sizing: border-box;  
@@ -748,7 +748,7 @@ ion-icon {
 
 .questogglebtn.highlighted{
   color: rgb(255, 255, 255);
-  background-color:rgb(151, 47, 255);
+  background-color:rgb(29, 114, 194);
   border: 0.2rem solid  transparent;
   border-radius: 0.65em;
 }
