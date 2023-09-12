@@ -186,7 +186,15 @@ export default function Codingpage() {
   };
 
 
+  // ip op section
+//   const TakeIpOp = (e) => {
+//     e.preventDefault();
+//     userlogin(Logincred);  
 
+// }
+
+
+    
   
 
 

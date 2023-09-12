@@ -44,6 +44,7 @@ body, html {
   position: fixed;
   left: 0;
   bottom: 0;
+  background: linear-gradient(315deg, rgb(23, 33, 55) 0%, rgb(33 57 150) 270%);
   width: 100%; /* Make the footer span the entire width */
 }
 

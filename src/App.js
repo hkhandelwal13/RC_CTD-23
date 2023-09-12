@@ -12,6 +12,7 @@ import Result from "./components/result-comp/result";
 import Footer from "./components/footer-comp/footer";
 import Quescards from "./components/quescard-comp/quescards";
 import Login from "./components/loginpage-comp/login";
+import Form from "./components/regester/register";
 // import QuestionHubPage from "./components/test_component/hello69";
 // import axios from "./components/axios";
 import { ToastContainer } from "react-toastify";
@@ -94,6 +95,7 @@ function App() {
           {/* <Route path="/submission" element={<Submission/>} /> */}
           <Route path="/question/:questionId" element={<Codingpage/>} />
           {/* <Route path="/test" element={<QuestionHubPage/>} /> */}
+          <Route path="/register" element={ <Form />} />
         </Routes>
     
       </div>

@@ -14,6 +14,7 @@ import Login from "../loginpage-comp/login";
 import { AxiosInstance } from '../../Utils/AxiosConfig';
 // import QuestionHubPage from "./components/test_component/hello69";
 import CountdownRedirect from "./timer"
+import Form from "../regester/register";
 export default function Navbar() {
   const nav = useNavigate();
 
@@ -90,7 +91,7 @@ export default function Navbar() {
             // href="https://ctd.credenz.in"
           
             style={{padding: 0, marginLeft : 20}}
-            ><img src="https://i.postimg.cc/HsPn6YrQ/NCC-2.png" alt="PISBLogo" className='img-style'/></a>
+            ><img src="https://i.postimg.cc/50nbjgvw/revb.png" alt="PISBLogo" className='img-style'/></a>
     </div>
    
     
@@ -102,6 +103,7 @@ export default function Navbar() {
           <p className="mb-0">{loggedIn && localStorage.getItem("contractAccept") ?  < CountdownRedirect /> :" "} </p>
       
 
+            <ul> { !loggedIn ? <Link to="/register"  className='nav-link' >Register</Link> : "" } </ul>
             <ul> { loggedIn && localStorage.getItem("contractAccept") ? <Link to="/question"  className='nav-link' >QuestionHub</Link> : "" } </ul>
             {/* <ul> { loggedIn ? <Link to="/leaderboard"  className='nav-link' >Leaderboard</Link> : "" } </ul> */}
             <ul> <Link to="/leaderboard"  className='nav-link' >Leaderboard</Link>  </ul>

@@ -8,8 +8,12 @@ function Instruct() {
   const [termsChecked, setTermsChecked] = useState(false);
   const [isButtonEnabled, setIsButtonEnabled] = useState(false);
   const instructions = [ 
-    "Participants are allowed only one login session. Multiple logins are not permitted ",
-    "The contest will run from 6 PM to 7:30 PM, lasting for a duration of 1.5 hours.",
+    "The following coding competition can be played in THREE languages ",
+    "These rounds consists of 6 questions of increaing marks in order. For first right submission,the first  the first participant to submit will receive full marks. For next right submissions, following participants will receive total-1, total-2 and so on marks.",
+    "The following contest will consist of two text boxes -a) Input textbox b) Output textbox. Participants are expected to put custom input in textbox and  corresponding output will be generated.",
+    "Based on output generated upon customized inputs provided, find the relation, and code it accordingly in the editor provided on the page.",
+   "To run the code and check for semantics , Press run button."
+   
     "The contest comprises of 5 questions",
     "All questions are available in the Question Hub. Additionally, the correct submission percentage of all the participants for each question is displayed",
     "A question toggling section allows you to navigate between different questions ",

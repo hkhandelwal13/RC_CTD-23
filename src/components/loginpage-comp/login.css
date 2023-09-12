@@ -321,7 +321,8 @@ body {
 }
 
 h1 {
-  font-size: 2.1rem;
+  font-size: 2.5rem;
+  color: #ddd;
 }
 
 .form {
@@ -381,6 +382,7 @@ h1 {
   height: 10px;
   background: rgb(2, 0, 36);
   background: var(--bg_gradient);
+  background: rgb(73 91 182);
   bottom: 100%;
   left: 5px;
   right: -5px;
@@ -399,11 +401,12 @@ h1 {
   bottom: 0;
   background: rgb(25, 0, 36);
   background: var(--bg_gradient);
+  background:  rgb(73 91 182);
 }
 
 .block-cube .bg-right {
   background: rgb(29, 0, 36);
-  background: rgb(157, 0, 255);
+  background: rgb(73 91 182);
   top: -5px;
   z-index: 0;
   bottom: 5px;
@@ -441,12 +444,14 @@ h1 {
 .block-cube.block-input input:focus ~ .bg-inner .bg-inner {
   top: 100%;
   background: rgba(255, 255, 255, 0.5);
+  background: rgb(58 162 202 / 50%);
 }
 
 .block-cube.block-input .bg-top,
 .block-cube.block-input .bg-right,
 .block-cube.block-input .bg {
   background: rgba(255, 255, 255, 0.5);
+  background: rgb(58 162 202 / 50%);
   transition:  0.2s ease-in-out;
 }
 
@@ -462,6 +467,7 @@ h1 {
 .block-cube.block-input:focus .bg,
 .block-cube.block-input:hover .bg {
   background: rgba(255, 255, 255, 0.8);
+  background: rgb(58 162 202 / 50%);
 }
 
 .block-cube-hover:focus .bg .bg-inner,
@@ -494,11 +500,20 @@ h1 {
   border-radius:5px;
   /* box-shadow: 5px 5px 2.5px #383737; */
   background: rgba( 255, 255, 255, 0.1 );
+  background: rgb(0 0 0 / 10%);
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+box-shadow: -14px 18px 10px 0 rgb(5 6 13 / 37%);
+box-shadow: -14px 18px 14px 0px rgb(0 0 0);
 backdrop-filter: blur( 5px );
 -webkit-backdrop-filter: blur( 5px );
 border-radius: 10px;
+border: 2px solid transparent;
 }
+
+.LoginBox>h1{
+  color: lightblue;
+}
+
 .controlheading{
   color: rgb(34, 9, 44);
    text-align: center;

@@ -24,7 +24,7 @@ const customStyles = {
   },
   headCells: {
       style: {
-        background :'#45096d',
+        background :'#12223a',
       },
   },
   cells: {
@@ -32,12 +32,12 @@ const customStyles = {
           // paddingLeft: '8px', // override the cell padding for data cells
           // paddingRight: '8px',
           color: 'white',
-          background: '#2d0c53',
+          background: '#123b5a',
       },
   },
   pagination: {
     style: {
-      background:'#45096d',
+      background:'#12223a',
       borderColor:"white",
       color:'white',
       borderWidth:'2px',

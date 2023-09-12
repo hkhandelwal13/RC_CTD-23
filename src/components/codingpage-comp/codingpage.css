@@ -4,7 +4,8 @@
 position:relative;
   height: 96vh;
   /* width: 1400px;; */
-  background: rgb(6,4,32);
+  background: linear-gradient(45deg,#141e30,#2e5686);
+
   /* background: linear-gradient(90deg  rgb(51, 8, 89) 28%, rgb(45, 9, 67) 48%, rgb(41, 8, 74) 81%, rgba(5,5,36,1) 91%); */
  position:relative;
     /* background-image: linear-gradient(201deg, #064346 -23%, #12100e 130%); */
@@ -427,7 +428,7 @@ user-select: none;
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(151, 47, 255);
+  background: #157a93;
 
   border-radius: 10px;
   
@@ -726,7 +727,8 @@ ion-icon {
  display: inline-block;
   /* padding: 0.5em 1.7em; */
   margin: 0 0.1em 0.1em 0;
-  border: 0.2rem solid  rgba(154, 86, 206, 0.911);
+  border: 0.2rem solid rgb(32 32 116 / 91%);;
+  
   border-radius: 0.65em;
   box-sizing: border-box;  
   text-decoration: none;
@@ -747,7 +749,7 @@ ion-icon {
 .questogglebtn.highlighted{
   color: rgb(255, 255, 255);
   background-color:rgb(151, 47, 255);
-  border: 0.2rem solid  #ffffff;
+  border: 0.2rem solid  transparent;
   border-radius: 0.65em;
 }
 

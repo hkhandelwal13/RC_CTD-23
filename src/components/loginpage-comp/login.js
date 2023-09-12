@@ -127,7 +127,7 @@ return (
     <div className="bg">
       <div className="bg-inner"></div>
     </div>
-    <div className="text">Log In</div>
+    <div className="text">Login</div>
   </button>
 
 </form>

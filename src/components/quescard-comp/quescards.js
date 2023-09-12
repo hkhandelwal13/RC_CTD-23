@@ -1,8 +1,8 @@
-import React,{useEffect,useState} from 'react';
-import './quescards.css'; // Import your custom CSS
-import { Link } from 'react-router-dom'
-import { AxiosInstance ,addAuthToken} from '../../Utils/AxiosConfig';
-import { getToken} from '../../Utils/utils';
+import React,{useEffect,useState} from 'react';  
+import './quescards.css'; // Import your custom CSS  
+import { Link } from 'react-router-dom'  
+import { AxiosInstance ,addAuthToken} from '../../Utils/AxiosConfig';  
+import { getToken} from '../../Utils/utils';  
 import { BsCheck2Circle } from 'react-icons/bs';
 // import {  toast } from 'react-toastify';
 // import LoaderComponent from "../loader/loader"; 
