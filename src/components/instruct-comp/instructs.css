@@ -2,8 +2,8 @@ body {
     
     color: #fff9f9;
     background: rgb(6,4,32);
-    background: linear-gradient(227deg, rgba(6,4,32,1) 15%, rgba(20,8,89,1) 28%, rgba(127,58,180,1) 48%, rgba(9,8,74,1) 81%, rgba(5,5,36,1) 91%);
-
+    /* background: linear-gradient(227deg, rgba(6,4,32,1) 15%, rgba(20,8,89,1) 28%, rgba(127,58,180,1) 48%, rgba(9,8,74,1) 81%, rgba(5,5,36,1) 91%); */
+    background: linear-gradient(45deg,#141e30,#355780);
     /* background-color: #0a1a74; */
     /* background-image: linear-gradient(43deg, #030b3a 11%, #a552c6 47%, #350776 83%, #180890 100%); */
     overflow-y: hidden;

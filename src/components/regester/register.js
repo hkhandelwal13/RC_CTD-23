@@ -110,7 +110,7 @@ const [loginState, setLoginState] = useState();
         <div className="container cont12 text-white p-3 p-sm-3 px-sm-4 mt-sm-0 log-style">
           <form onSubmit={submitDetails}>
             <div className="title mb-sm-3 mb-3 text-center">
-              <h1>Sign up</h1>
+              <h1>Sign Up</h1>
               <small className="d-none">
                 Will be delightful to have you on board.
               </small>
@@ -119,7 +119,7 @@ const [loginState, setLoginState] = useState();
               <input
                 type="text"
                 className="form-control form-control-lg fs-6 input-style-register"
-                placeholder="  First Name"
+                placeholder=" First Name"
                 name="first_name"
                 value={userDetails.first_name}
                 onChange={handleChange}
@@ -129,7 +129,7 @@ const [loginState, setLoginState] = useState();
               <input
                 type="text"
                 className="form-control form-control-lg fs-6 input-style-register"
-                placeholder="  Last Name"
+                placeholder=" Last Name"
                 name="last_name"
                 value={userDetails.last_name}
                 onChange={handleChange}
@@ -140,7 +140,7 @@ const [loginState, setLoginState] = useState();
               <input
                 type="text"
                 className="form-control form-control-lg fs-6 input-style-register"
-                placeholder="  Username"
+                placeholder=" Username"
                 name="username"
                 value={userDetails.Username}
                 onChange={handleChange}
@@ -151,7 +151,7 @@ const [loginState, setLoginState] = useState();
               <input
                 type="email"
                 className="form-control form-control-lg fs-6 input-style-register"
-                placeholder="  Email address"
+                placeholder=" Email address"
                 name="email"
                 value={userDetails.email}
                 onChange={handleChange}
@@ -163,7 +163,7 @@ const [loginState, setLoginState] = useState();
               <input
                 type="password"
                 className="form-control form-control-lg fs-6 input-style-register"
-                placeholder="  Password"
+                placeholder=" Password"
                 name="password"
                 value={userDetails.password}
                 onChange={handleChange}
@@ -201,7 +201,7 @@ const [loginState, setLoginState] = useState();
             </div> */}
 
             <div className="input-group mb-2">
-              <button className="btn btn-lg w-100 rounded-2 fs-6 btn12 text-light">
+              <button className="btn btn-lg w-100 rounded-2 fs-6 btn12 ">
                 Register
               </button>
             </div>

@@ -180,7 +180,7 @@ export default function QuestionDetailSection(props){
                   borderRadius:'5px',
                 }}
                 multiline
-                rows={8}
+                rows={4}
                 placeholder="Enter input here"
                 InputProps={{
                   style: { ...whiteText },
@@ -207,7 +207,7 @@ export default function QuestionDetailSection(props){
                   border: '2px solid white',
                   borderRadius: '5px',
                 }}
-                rows={8}
+                rows={4}
                 placeholder="Display output here"
                 InputLabelProps={{ className: 'whiteText' }} // White label color
                 className={whiteOutlinedInput} // Apply white outline

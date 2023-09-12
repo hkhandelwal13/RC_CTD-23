@@ -1,6 +1,6 @@
 .cont12{
     width: 530px;
-    margin-top: 0.1% !important;
+    margin-top: 1% !important;
     background: linear-gradient(45deg,#141e30,#355780);
   }
   
@@ -27,6 +27,12 @@
     border-color:rgba(255, 255, 255, 0.494);
     box-shadow: none;
   }
+
+  .input-style-register::placeholder {
+    color: #ddd;
+    opacity: 1;
+  }
+
   .btn12{
     background:#0c0423;
     color: white;
@@ -35,7 +41,9 @@
   }
 
   .btn12:hover {
-    background: gray;
+    background: #ddd;
+    color: black;
+    font-weight: bold;
   }
   /* 
   .cont{

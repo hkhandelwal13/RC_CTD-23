@@ -3,7 +3,7 @@ import './quescards.css'; // Import your custom CSS
 import { Link } from 'react-router-dom'  
 import { AxiosInstance ,addAuthToken} from '../../Utils/AxiosConfig';  
 import { getToken} from '../../Utils/utils';  
-import { BsCheck2Circle } from 'react-icons/bs';
+import { BsCheck2Circle } from 'react-icons/bs'; 
 // import {  toast } from 'react-toastify';
 // import LoaderComponent from "../loader/loader"; 
 // import Graph from "../Graph/graph"
@@ -22,15 +22,15 @@ const [Qdata, setQdata] = useState(tasks);
    
     // setLoading(true);
     
-    addAuthToken(getToken());
-    AxiosInstance.get(endPoint)
+    addAuthToken(getToken());  
+    AxiosInstance.get(endPoint) 
             .then((response) => {
                 // console.log("enter in then ");
-                if (response.status) {
+                if (response.status) { 
                     // console.log("enter in then if ");
                     // console.log(response.data);
                     setQdata(response.data)
-                    const questionDetails = {};
+                    const questionDetails = {};  
                   for(let i = 1; i <=response.data.length; i++) {
                     
                        questionDetails[i] = response.data[i-1].questionId;
